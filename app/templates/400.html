@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>Solicitação inválida</h1>
+</div>
+<p>O formulário expirou ou a solicitação é inválida. Abra o cadastro e tente novamente.</p>
+<p><a href="{{ url_for('main.alunos') }}">Voltar ao cadastro de alunos</a></p>
+{% include "_data_hora.html" %}
+{% endblock %}
